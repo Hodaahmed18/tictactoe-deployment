@@ -5,7 +5,7 @@ echo " Starting deployment..."
 echo " Updating system packages..."
 sudo apt update -y &>/dev/null && sudo apt upgrade -y &>/dev/null
 
-echo " Installing nginx..."
+echo "🌐 Installing nginx..."
 sudo apt install nginx -y &>/dev/null
 
 echo " Installing unzip..."
@@ -27,5 +27,12 @@ echo " Installing app dependencies..."
 cd app
 npm install &>/dev/null
 
-echo "Deployment complete. Starting app..."
-npm start
+echo "⚙️ Configuring nginx reverse proxy..."
+sudo sed -i 's|try_files $uri $uri/ =404;|proxy_pass http://localhost:3000;|g' /etc/nginx/sites-available/default
+sudo systemctl restart nginx &>/dev/null
+
+echo "Starting app with pm2..."
+sudo npm install -g pm2 &>/dev/null
+pm2 start index.js
+
+echo " All done. App running on port 80."
