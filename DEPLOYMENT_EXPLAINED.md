@@ -163,14 +163,6 @@ This creates an `app/` folder containing all the application code.
 cd app
 npm install
 ```
-This tells nginx: "instead of looking for a file, pass this request to the app running on port 3000."
-
-Then restart nginx to apply the change:
-
-```bash
-sudo systemctl restart nginx
-```
-
 ---
 
 ## ⚙️ Step 10 : Configure nginx as a Reverse Proxy
