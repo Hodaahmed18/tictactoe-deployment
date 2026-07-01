@@ -58,15 +58,7 @@ Locking it to your IP means only you can attempt to connect.
 
 ```bash
 ssh -i your-key.pem ubuntu@YOUR_PUBLIC_IP
-``
-
-- `YOUR_PUBLIC_IP` : the address of your server.
-
-**Why a key file instead of a password?**
-Key-based authentication is much harder to crack than a password.
-The key file contains a long cryptographic string that can't be guessed.
-
----
+```
 
 ## 📦 Step 4 : Update the System
 
