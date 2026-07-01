@@ -227,7 +227,7 @@ sudo npm install -g pm2
 pm2 start index.js
 ```
 
-If we just run `npm start`, the app runs in the foreground.
+If we just run `npm start`, the app doesn't run in the background.
 The moment you close your terminal or disconnect, the app dies.
 
 pm2 is a process manager, it runs the app in the background and keeps it alive even after you disconnect.
@@ -261,7 +261,7 @@ Doing this manually once teaches you what's happening.
 But in the real world you might need to deploy the same app to 10 servers,
 or redeploy every time there's an update.
 
-A bash script runs every step automatically, in order, without human error.
+A bash script runs every step automatically, so in order and without human error.
 That's what `deploy.sh` does : it's the entire process above in one file.
 
 ---
@@ -282,4 +282,4 @@ What would change:
 - Any app-specific environment variables
 
 That's the power of automation : the infrastructure is reusable,
-only the app-specific parts need changing.
+its just the app-specific parts need changing.
