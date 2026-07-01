@@ -12,9 +12,6 @@ curl -sL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt install nodejs -y
 
-## Get App Onto the VM
-scp -i hodas-tech610.pem nodejs20-sparta-tictactoe-v1-2.zip ubuntu@54.194.181.116:/home/ubuntu/
-
 sudo apt install unzip -y
 unzip nodejs20-sparta-tictactoe-v1-2.zip
 
