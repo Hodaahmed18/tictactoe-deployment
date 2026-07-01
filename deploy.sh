@@ -5,16 +5,16 @@ echo " Starting deployment..."
 echo " Updating system packages..."
 sudo apt update -y &>/dev/null && sudo apt upgrade -y &>/dev/null
 
-echo "🌐 Installing nginx..."
+echo " Installing nginx..."
 sudo apt install nginx -y &>/dev/null
 
 echo " Installing unzip..."
 sudo apt install unzip -y &>/dev/null
 
-echo "⬇️ Downloading Node.js setup script..."
+echo " Downloading Node.js setup script..."
 curl -sL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh &>/dev/null
 
-echo "⚙️ Configuring Node.js repository..."
+echo " Configuring Node.js repository..."
 sudo bash nodesource_setup.sh &>/dev/null
 
 echo " Installing Node.js v20..."
@@ -27,7 +27,7 @@ echo " Installing app dependencies..."
 cd app
 npm install &>/dev/null
 
-echo "⚙️ Configuring nginx reverse proxy..."
+echo " Configuring the nginx reverse proxy..."
 sudo sed -i 's|try_files $uri $uri/ =404;|proxy_pass http://localhost:3000;|g' /etc/nginx/sites-available/default
 sudo systemctl restart nginx &>/dev/null
 
