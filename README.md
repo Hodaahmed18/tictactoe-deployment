@@ -1,5 +1,5 @@
 # 🎮 Tic Tac Toe — Cloud Deployment
-Node.js App Deployment on AWS EC2
+Node.js App Deployment on AWS UBUNTU EC2
 
 End-to-end automated deployment of a Node.js application onto a fresh Ubuntu EC2 instance, including nginx reverse proxy configuration and process management with pm2.
 
