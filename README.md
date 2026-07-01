@@ -45,7 +45,7 @@ This project demonstrates a full manual-to-automated deployment pipeline where I
 ```bash
 chmod +x deploy.sh && ./deploy.sh
 ```
-6. Visit your public IP in a browser — no port number needed
+6. Visit your public IP in a browser - no port number needed
 
 ## 🛠️ Tech Stack
 - Ubuntu 26.04 on AWS EC2
@@ -59,13 +59,6 @@ chmod +x deploy.sh && ./deploy.sh
 - SSH locked to specific IP on port 22
 - Security group configured with least privilege
 - nginx handles public traffic, app runs internally on port 3000
-
-## 📜 Certifications
-| Certification | Status |
-|---------------|--------|
-| RHCSA | ✅ Certified |
-| CompTIA Security+ | 🔄 In Progress |
-| AWS Solutions Architect Associate | 📅 Planned |
 
 ## 📌 What I Learned
 - How to manually deploy a Node.js app to a cloud server end to end
