@@ -1,7 +1,7 @@
-# 🧠 Deployment Explained — The Full Picture
+# 🧠 Deployment Explained : The Full Picture
 
 This document explains every step of the deployment process in plain English.
-Not just what the commands DO — but WHY we're doing them, and what would happen if we didn't.
+Not just what the commands DO, but WHY we're doing them, and what would happen if we didn't.
 
 ---
 
