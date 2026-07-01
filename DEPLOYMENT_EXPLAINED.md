@@ -235,9 +235,11 @@ The whole journey:
 
 Browser → Port 80 → nginx → Port 3000 → Node.js app → Response
 
-OKAY NOW FOR THE WHY
+
 
 ---
+
+OKAY NOW FOR THE WHY
 
 ## 🤖 Why Automate It?
 
